@@ -2,17 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-
-
-
-//  () => {} 
-// React components are regular JavaScript funcition, but their names must start with a capital letter or won't work!
-//  component = htm + css + js
-const MyComponent = () => {
-  return (
-    <div>le kim thanh</div>
-  );
-}
+import MyComponent from './components/learn/MyComponent'
+import { SecondComponent, ThirdComponent } from './components/learn/SecondComponent'
 
 const App = () => {
   const [count, setCount] = useState(0)
@@ -29,6 +20,8 @@ const App = () => {
       </div>
       <h1>Hello world</h1>
       <MyComponent />
+      <SecondComponent />
+      <ThirdComponent/>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
